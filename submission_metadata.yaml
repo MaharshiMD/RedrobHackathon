@@ -23,7 +23,8 @@ team_members:
 # ============================================================================
 github_repo: "https://github.com/MaharshiMD/RedrobHackathon"
 sandbox_link: "INSERT_YOUR_SANDBOX_LINK_HERE"  # e.g., your-google-colab-link-or-huggingface-space
-reproduce_command: "python rank.py --candidates ".\[PUB] India_runs_data_and_ai_challenge\[PUB] India_runs_data_and_ai_challenge\India_runs_data_and_ai_challenge\candidates.jsonl" --out team_OnePiece_Developers.csv"
+reproduce_notes: "The candidates.jsonl dataset file is provided by the hackathon portal. Please download it from the hackathon dataset portal and place it in the [PUB] India_runs_data_and_ai_challenge/[PUB] India_runs_data_and_ai_challenge/India_runs_data_and_ai_challenge/ directory before running the reproduce command."
+reproduce_command: "python rank.py --candidates \".[PUB] India_runs_data_and_ai_challenge\[PUB] India_runs_data_and_ai_challenge\India_runs_data_and_ai_challenge\candidates.jsonl\" --out team_OnePiece_Developers.csv"
 
 # ============================================================================
 # Compute environment
