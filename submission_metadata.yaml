@@ -1,0 +1,75 @@
+# Redrob Hackathon — Submission Metadata
+#
+# Mirroring portal metadata for Stage 3 validation.
+# Please update the placeholders (INSERT_YOUR_...) with your actual credentials.
+
+# ============================================================================
+# Team identity
+# ============================================================================
+team_name: "OnePiece Developers"
+
+primary_contact:
+  name: "Maharshi Vipulbhai Dihora "
+  email: "maharshidihora@gmail.com"
+  phone: "+917862064849"
+
+team_members:
+  - name: "KAVTHIYA SHRUSTI JIGNESHBHAI"
+    email: "shrusti.k.205@gmail.com"
+    role: "Research & Documentation"
+
+# ============================================================================
+# Code and reproducibility
+# ============================================================================
+github_repo: "https://github.com/MaharshiMD/RedrobHackathon"
+sandbox_link: "INSERT_YOUR_SANDBOX_LINK_HERE"  # e.g., your-google-colab-link-or-huggingface-space
+reproduce_command: "python rank.py --candidates ".\[PUB] India_runs_data_and_ai_challenge\[PUB] India_runs_data_and_ai_challenge\India_runs_data_and_ai_challenge\candidates.jsonl" --out team_OnePiece_Developers.csv"
+
+# ============================================================================
+# Compute environment
+# ============================================================================
+compute:
+  platform: "Local CPU Workstation"
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: "3.11.4"
+  os: "Windows 11 / Docker Linux"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: false
+  pre_computation_time_minutes: 0
+
+# ============================================================================
+# AI tools declaration
+# ============================================================================
+ai_tools_used:
+  - "Gemini 1.5 Flash"
+  - "Gemini 2.0 Flash"
+  - "Cursor"
+
+ai_usage_summary: |
+  Used Gemini for design discussion, honeypot analysis, and logic verification.
+  Used Cursor for refactoring and code organization.
+  No candidate data was uploaded or sent to external network endpoints during ranking execution.
+
+# ============================================================================
+# Approach summary
+# ============================================================================
+methodology_summary: |
+  Rule-based candidate ranking system with multi-stage filtering and hybrid scoring.
+  First, 4 dynamic honeypot rules filter out logical/date inconsistencies (expert skills with 0 duration,
+  YoE mismatch, impossible job/skill durations) and consulting-only career histories.
+  Second, candidates are scored using a weighted hybrid score combining skill relevance (boosted if skills
+  are mentioned in job descriptions to filter keyword stuffers), experience quality (YoE fit, product keywords,
+  education tier), platform behavioral signals (response rate, recency, connections), and logistics (location,
+  notice period). Outputs custom, non-templated reasoning for each shortlist candidate. Runs in < 2 minutes on CPU.
+
+# ============================================================================
+# Declarations
+# ============================================================================
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true
